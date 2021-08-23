@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ger-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+  <style>
+
+.header {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 20px;
+}
+
+.header{
+  grid-area: header;
+  background-color: blue;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.grid-container{
+  display:grid;
+  grid-template-areas: 
+    'left left header header header header' 
+    'left left middle middle middle middle' 
+    'footer footer footer footer footer footer';
+  grid-column-gap: 10px
+}
+
+.left {
+  grid-area: left;
+}
+.middle {
+  grid-area: middle;
+}
+.footer {
+  grid-area: footer;
+  background-color: darkslateblue;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .grid-container  {
+    grid-template-areas: 
+      'header header header header header header' 
+      'middle middle middle middle middle middle' 
+      'footer footer footer footer footer footer';
+  }
+
+  h1 {
+    color: Black;
+    font-family: verdana;
+    font-size: 300%;
+    }
+  h2{
+    color:orange;
+    font-family: verdana;
+    font-size: 300%;
+    }
+  p.one {
+    border-style: inset;
+    border-width: 5px 20px;
+    }
+  p {
+    color: red;
+    font-family: Helvetica;
+    font-size: 160%;
+    }
+    
+    }
+
+}
+
+
+    </style>
+    </head>
+
+
+  <body>
+
+  <div class="grid-container">
+    <div class="header">
+      <h1>This is Parkers Website</h1>
+      <p> </p>
+      <h3>I am in Mr. Dunlea's Computer Science Class</h3>
+    </div>
+    
+    <div class="Left" style="background-color: deepskyblue;">
+    This is where links go
+    <div>
+    <a href="index.html">Home at Last</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="aboutme.html">About Me</a>
+    <h1>This is Pakers Home Page!</h1>
+  </div>
+    </div>
+
+    <div class="Left" style="background-color: lightblue;">
+      This is where content goes
+      <img src="H:\Parkers Files\Website\Website_Images\House.jpg">
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
